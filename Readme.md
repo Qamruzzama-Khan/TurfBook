@@ -82,4 +82,4 @@ turf-booking-app/
 
 ## 👨‍💻 Author
 
-Developed by **[Qamruzzama Khan](https://github.com/yourusername)** 🚀
+Developed by **[Qamruzzama Khan](https://github.com/Qamruzzama-Khan)** 🚀
