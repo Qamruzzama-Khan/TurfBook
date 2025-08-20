@@ -4,7 +4,7 @@ import { formatTime } from "../utils/formatTime";
 import { getSlotTimeLeft } from "../utils/slotTimer";
 
 const BookingCard = ({ booking }) => {
-  const [timeLeft, setTimeLeft] = useState({ text: "", status: "default" });
+  const [timeLeft, setTimeLeft] = useState("");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -60,7 +60,6 @@ const BookingCard = ({ booking }) => {
       <div className="pt-3 border-t flex justify-between items-center">
         <span className="text-black font-semibold text-sm">{timeLeft}</span>
         <p>
-          <span className="font-semibold text-gray-900"></span>{" "}
           {booking.slotId?.date &&
             (isToday(new Date(booking.slotId.date))
               ? "Today"
