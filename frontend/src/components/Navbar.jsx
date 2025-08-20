@@ -65,21 +65,22 @@ const Navbar = () => {
         </div>
 
         <ul className="flex flex-col gap-3  text-gray-700">
-          <li className="hover:bg-gradient-to-r from-green-500 to-teal-600 hover:text-white py-1 px-2 cursor-pointer rounded-lg" onClick={() => navigate("/")}>
+          <li className="hover:bg-gradient-to-r from-green-500 to-teal-600 hover:text-white py-1 px-2 cursor-pointer rounded-lg" onClick={() => navigate("/");
+    setIsOpen(false);}>
         Home
       </li>
           {currentUser && (
-            <li className="hover:bg-gradient-to-r from-green-500 to-teal-600 hover:text-white py-1 px-2 cursor-pointer rounded-lg" onClick={() => navigate("/my/bookings")}>
+            <li className="hover:bg-gradient-to-r from-green-500 to-teal-600 hover:text-white py-1 px-2 cursor-pointer rounded-lg" onClick={() => navigate("/my/bookings");setIsOpen(false);}>
           My Bookings
         </li>
           )}
           {currentUser && (
-            <li className="cursor-pointer" onClick={() => navigate("/profile")}>
+            <li className="cursor-pointer" onClick={() => navigate("/profile");setIsOpen(false);}>
            <FaUser className="text-3xl text-green-500 border p-1 rounded-full bg-gray-100 hover:text-green-600" />
         </li>
           )}
           {!currentUser && (
-            <li className="hover:bg-gradient-to-r from-green-500 to-teal-600 hover:text-white py-1 px-2 cursor-pointer rounded-lg" onClick={() => navigate("/login")}>
+            <li className="hover:bg-gradient-to-r from-green-500 to-teal-600 hover:text-white py-1 px-2 cursor-pointer rounded-lg" onClick={() => navigate("/login");setIsOpen(false);}>
           Login
         </li>
           )}
