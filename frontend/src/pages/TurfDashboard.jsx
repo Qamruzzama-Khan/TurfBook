@@ -43,7 +43,6 @@ const TurfDashboard = () => {
             <th className="px-4 py-2 border">Payment ID</th>
             <th className="px-4 py-2 border">Slot</th>
             <th className="px-4 py-2 border">Status</th>
-            <th className="px-4 py-2 border">Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -68,9 +67,6 @@ const TurfDashboard = () => {
             >
               {booking.status}
             </td>
-             <td className="px-4 py-2 border">
-              <button>Delete</button>
-             </td>
           </tr>
          ))}
         </tbody>
