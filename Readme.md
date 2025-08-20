@@ -35,7 +35,7 @@ A **MERN stack application** that allows users to browse, book, and manage turf 
 
 ## 📸 Screenshots
 
-> (Add screenshots or gifs of your app UI — e.g., Home Page, Booking Flow, My Bookings Page)
+> ![Home Page](./frontend/src/assets/app_home.png)
 
 ---
 
