@@ -30,7 +30,7 @@ const TurfDashboard = () => {
   return (
    <div className="p-5">
      <div className="overflow-x-auto">
-      {bookings && bookings.length > 0 && (
+      {bookings && bookings.length > 0 ? (
         <table className="min-w-full border border-gray-300 rounded-lg shadow-md">
         <thead className="bg-gray-100 text-gray-700">
           <tr>
@@ -42,6 +42,7 @@ const TurfDashboard = () => {
             <th className="px-4 py-2 border">Payment ID</th>
             <th className="px-4 py-2 border">Slot</th>
             <th className="px-4 py-2 border">Status</th>
+            <th className="px-4 py-2 border">Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -66,10 +67,15 @@ const TurfDashboard = () => {
             >
               {booking.status}
             </td>
+             <td className="px-4 py-2 border">
+              <button>Delete</button>
+             </td>
           </tr>
          ))}
         </tbody>
       </table>
+      ) : (
+        <p>No bookings found...</p>
       )}
     </div>
    </div>
