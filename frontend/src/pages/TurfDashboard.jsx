@@ -29,6 +29,7 @@ const TurfDashboard = () => {
 
   return (
    <div className="p-5">
+    <h1 className="py-4 text-lg ">Bookings</h1>
      <div className="overflow-x-auto">
       {bookings && bookings.length > 0 ? (
         <table className="min-w-full border border-gray-300 rounded-lg shadow-md">
