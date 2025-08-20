@@ -29,7 +29,7 @@ A **MERN stack application** that allows users to browse, book, and manage turf 
 * **Backend:** Node.js, Express.js
 * **Database:** MongoDB + Mongoose
 * **Authentication:** JWT (with refresh & access tokens)
-* **Deployment:** (add your platform: Vercel, Netlify, Render, Railway, etc.)
+* **Deployment:** Render
 
 ---
 
